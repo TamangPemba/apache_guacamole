@@ -44,14 +44,14 @@ services:
 
       # Enabling AD/LDAP Authentication
       ENABLE_ENVIRONMENT_PROPERTIES: "true"
-      LDAP_HOSTNAME: "192.168.20.233"
+      LDAP_HOSTNAME: "192.168.90.90"
       LDAP_PORT: "389"
       LDAP_ENCRYPTION_METHOD: "none"
       LDAP_USER_BASE_DN: "DC=dc,DC=dmn"
       LDAP_MAX_SEARCH_RESULTS: "5000"
       LDAP_USERNAME_ATTRIBUTE: "sAMAccountName"
-      LDAP_SEARCH_BIND_DN: "mguaca@dc.dmn"
-      LDAP_SEARCH_BIND_PASSWORD: "Dish@2025##!!"
+      LDAP_SEARCH_BIND_DN: "dcuser@dc.pemba"
+      LDAP_SEARCH_BIND_PASSWORD: "your_pass!"
       LDAP_USER_SEARCH_FILTER: "(&(objectClass=user)(!(objectClass=computer)))"
 
       # Recording
