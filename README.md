@@ -19,7 +19,7 @@ The stack includes:
 
 All services are connected over an internal Docker network (`guacnet`).
 
-## 🚀 How to Deploy on Any Machine
+## 📦 Deployment Guide
 
 ###  1. Install Prerequisites
 
