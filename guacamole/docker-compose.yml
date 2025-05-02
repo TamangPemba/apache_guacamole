@@ -58,12 +58,10 @@ services:
 
       # Recording
       RECORDING_SEARCH_PATH: '/var/lib/guacamole/recordings'
-      ENABLE_DRIVE_REDIRECTION: "true"
  
     volumes:
       - ./guacamole_data:/config
       - ./recordings:/var/lib/guacamole/recordings:rw
-      - ./rdp_drive:/var/lib/guacamole/drive:rw
 
     networks:
       - guacnet
