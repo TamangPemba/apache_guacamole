@@ -36,7 +36,7 @@ cd apache_guacamole/guacamole
 ```
 
 ### 3. Configure Environment 
-- Edit docker-compose.yml with your LDAP server settings (if applicable).
+- Edit docker-compose.yml with your LDAP server settings.
 - Place SSL certificates in nginx/certs/.
 - Verify or customize nginx.conf in the nginx/ directory.
 
@@ -51,8 +51,8 @@ This command will:
 - Start the services automatically
 ### Database Initialization (Required Once)
 After starting the containers, you must initialize the PostgreSQL database schema for Guacamole:
-```
-bash
+
+```bash
 # Generate the initdb.sql schema file
 docker run --rm guacamole/guacamole /opt/guacamole/bin/initdb.sh --postgresql > initdb.sql
 
@@ -73,16 +73,16 @@ Guacamole will then be ready to store connections, users, and history in the dat
 
 ### 5. Access the Web UI
 Open your browser and go to:
-- https://your_server_ip
+- https://your_server_ip  
 or
 -  https://your_domain_name
 
 Login Options
-LDAP credentials (Active Directory users)
-Fallback default user (if LDAP fails):
+- LDAP credentials (Active Directory users)
+- Fallback default user (if LDAP fails):
 
-Username: guacadmin
-Password: guacadmin
+**Username**: `guacadmin`  
+**Password**: `guacadmin`
 
 ⚠️ You should change or disable the guacadmin account after initial setup for security.
 
