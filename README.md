@@ -1,6 +1,7 @@
 # Apache Guacamole Bastion Server (Docker Compose)
 
-This repository provides a ready-to-deploy Docker Compose setup for running [Apache Guacamole](https://guacamole.apache.org/) as a **bastion host**. It includes support for:
+This repository provides a ready-to-deploy Docker Compose setup for running <a href="https://guacamole.apache.org/" target="_blank">Apache Guacamole</a> as a **bastion host**. It includes support for:
+
 
 - Remote desktop access via web browser
 - LDAP authentication (Active Directory)
